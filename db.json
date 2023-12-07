@@ -1,12 +1,6 @@
 {
   "contacts": [
     {
-      "name": "Eyal",
-      "number": "0655354346",
-      "email": "eyal_ex@gmail.co.il",
-      "id": 1
-    },
-    {
       "name": "Bob Johnson",
       "email": "bob.johnson@example.com",
       "number": "5555555555",

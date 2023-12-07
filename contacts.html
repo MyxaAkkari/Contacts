@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Contacts</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h1>Contacts</h1>
+    <div id="searchContainer">
+        <input id="searchName" type="text" placeholder="Search by Name">
+    </div><br>
     <div id="inputContainer">
         <input id="Name" type="text" placeholder="Name">
         <input id="phoneNumber" type="text" placeholder="Number">
@@ -18,92 +22,7 @@
     <ul id="contactsList"></ul>
 
 
-    <script>
-        const My_Server = "http://localhost:3000/contacts"
-        document.addEventListener('DOMContentLoaded', () => {
-            const contactListElement = document.getElementById('contactsList')
-
-            function updateContactList(data) {
-                contactListElement.innerHTML = data.map((contact) =>
-                    `<li>Name: ${contact.name} - Number: ${contact.number} - Email: ${contact.email} 
-                        <button onclick="editContact(${contact.id})">Edit</button>
-                        <button onclick="delContact(${contact.id})">Del</button></li>`
-                ).join('');
-
-            }
-
-            async function fetchData() {
-
-                try {
-                    const response = await fetch(My_Server);
-                    const data = await response.json();
-                    updateContactList(data);
-                } catch (error) {
-                    console.error('Error fetching data:', error);
-                }
-            };
-
-            fetchData();
-
-            setInterval(fetchData, 5000);
-
-        })
-
-
-        function addContact() {
-            fetch(My_Server, {
-                method: 'post',
-                body: JSON.stringify({
-                    name: Name.value,
-                    email: Email.value,
-                    number: phoneNumber.value
-
-                }), headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                },
-            })
-                .then((response) => response.json())
-                .then((json) => console.log(json));
-        }
-        function editContact(ind) {
-            const newName = prompt('Enter new name:');
-            const newEmail = prompt('Enter new email:');
-            const newNumber = prompt('Enter new number:');
-
-            if (newName && newEmail && newNumber) {
-                fetch((My_Server + '/' + ind), {
-                    method: 'PUT',
-                    body: JSON.stringify({
-                        name: newName,
-                        number: newNumber,
-                        email: newEmail
-                        
-                    }),
-                    headers: {
-                        'Content-type': 'application/json; charset=UTF-8',
-                    },
-                })
-                    .then((response) => response.json())
-                    .then((json) => console.log(json));
-            }
-        }
-
-        function delContact(ind) {
-            fetch(My_Server + "/" + (ind), {
-                method: 'DELETE',
-            });
-        }
-
-
-
-
-
-
-
-
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
