@@ -1,0 +1,124 @@
+{
+  "contacts": [
+    {
+      "name": "Eyal",
+      "number": "0655354346",
+      "email": "eyal_ex@gmail.co.il",
+      "id": 1
+    },
+    {
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "number": "5555555555",
+      "id": 2
+    },
+    {
+      "name": "Emma Davis",
+      "email": "emma.davis@example.com",
+      "number": "4567890123",
+      "id": 3
+    },
+    {
+      "name": "James White",
+      "email": "james.white@example.com",
+      "number": "1112223333",
+      "id": 4
+    },
+    {
+      "name": "Lily Johnson",
+      "email": "lily.johnson@example.com",
+      "number": "9990001111",
+      "id": 5
+    },
+    {
+      "name": "Oliver Smith",
+      "email": "oliver.smith@example.com",
+      "number": "7778889999",
+      "id": 6
+    },
+    {
+      "name": "Sophia Miller",
+      "email": "sophia.miller@example.com",
+      "number": "2223334444",
+      "id": 7
+    },
+    {
+      "name": "William Davis",
+      "email": "william.davis@example.com",
+      "number": "6667778888",
+      "id": 8
+    },
+    {
+      "name": "Isabella Wilson",
+      "email": "isabella.wilson@example.com",
+      "number": "3334445555",
+      "id": 9
+    },
+    {
+      "name": "Benjamin Thompson",
+      "email": "benjamin.thompson@example.com",
+      "number": "8889990000",
+      "id": 10
+    },
+    {
+      "name": "Amelia Taylor",
+      "email": "amelia.taylor@example.com",
+      "number": "5556667777",
+      "id": 11
+    },
+    {
+      "name": "Ethan Anderson",
+      "email": "ethan.anderson@example.com",
+      "number": "1237894560",
+      "id": 12
+    },
+    {
+      "name": "Madison Clark",
+      "email": "madison.clark@example.com",
+      "number": "9870123456",
+      "id": 13
+    },
+    {
+      "name": "Logan Walker",
+      "email": "logan.walker@example.com",
+      "number": "5552223333",
+      "id": 14
+    },
+    {
+      "name": "Ava Harris",
+      "email": "ava.harris@example.com",
+      "number": "4569871230",
+      "id": 15
+    },
+    {
+      "name": "Mason Evans",
+      "email": "mason.evans@example.com",
+      "number": "1115553333",
+      "id": 16
+    },
+    {
+      "name": "Ella King",
+      "email": "ella.king@example.com",
+      "number": "4442221111",
+      "id": 17
+    },
+    {
+      "name": "Scarlett Turner",
+      "email": "scarlett.turner@example.com",
+      "number": "6660009999",
+      "id": 19
+    },
+    {
+      "name": "Jackson Reed",
+      "email": "jackson.reed@example.com",
+      "number": "7779998888",
+      "id": 20
+    },
+    {
+      "name": "Penelope Morris",
+      "email": "penelope.morris@example.com",
+      "number": "8881112222",
+      "id": 21
+    }
+  ]
+}
