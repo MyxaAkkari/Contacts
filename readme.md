@@ -3,3 +3,5 @@
 ### Requirments:
 - Use local JSON db.
 - CRUD.
+### Improvments
+- Added a search function.
